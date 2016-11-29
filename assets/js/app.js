@@ -34,6 +34,7 @@ function onSuccessHttpRequest(request_intent, xhr, response) {
  * @param xhr
  */
 function onFailedHttpRequest(request_intent, xhr) {
+ document.getElementById("main-content").innerHTML = xhr.responseText;
 }
 
 /**
